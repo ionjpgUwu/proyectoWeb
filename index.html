@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio INF 113</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="cabecera">
+        <div class="logo">
+            <img src="unnamed.png" alt="Logo">
+        </div>
+        <div>
+            <h1>Laboratorio de Diseño y JavaScript</h1>
+            <h1>Estudiante: Jhonatan Plata Cruz</h1>
+            <h2>Docente: Ph. D. José María Tapia B.</h2>
+            <h2>Carrera: Informatica</h2>
+            <h3>Fecha: 4/12/2024</h3>
+        </div>
+        
+    </div>
+
+    <div class="contenido-principal">
+        <div class="menu-lateral">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="#ejercicio1">Ejercicio 1</a></li>
+                <li><a href="#ejercicio2">Ejercicio 2</a></li>
+                <li><a href="#ejercicio3">Ejercicio 3</a></li>
+                <li><a href="#ejercicio4">Ejercicio 4</a></li>
+                <li><a href="#ejercicio5">Ejercicio 5</a></li>
+                <li><a href="#ejercicio6">Ejercicio 6</a></li>
+                <li><a href="#ejercicio7">Ejercicio 7</a></li>
+                <li><a href="#ejercicio8">Ejercicio 8</a></li>
+                <li><a href="#ejercicio9">Ejercicio 9</a></li>
+                <li><a href="#ejercicio10">Ejercicio 10</a></li>
+            </ul>
+        </div>
+
+        <div class="contenido">
+            <section id="ejercicio1">
+                <h2>Ejercicio 1: Serie Fibonacci</h2>
+                <form id="fibonacciForm">
+                    <label for="fibonacciInput">Número de términos:</label>
+                    <input type="number" id="fibonacciInput" min="1" required>
+                    <button type="button" onclick="generarSerieFibonacci()">Generar</button>
+                </form>
+                <p id="resultadoFibonacci"></p>
+            </section>
+        
+            <section id="ejercicio2">
+                <h2>Ejercicio 2: Serie Binaria</h2>
+                <form id="serieBinariaForm">
+                    <label for="binariaInput">Número de términos:</label>
+                    <input type="number" id="binariaInput" min="1" required>
+                    <button type="button" onclick="generarSerieBinaria()">Generar</button>
+                </form>
+                <p id="resultadoBinaria"></p>
+            </section>
+        
+            <section id="ejercicio3">
+                <h2>Ejercicio 3: Factoriales y Suma</h2>
+                <form id="factorialesForm">
+                    <label for="factorialInput">Calcular hasta:</label>
+                    <input type="number" id="factorialInput" min="1" required>
+                    <button type="button" onclick="calcularFactoriales()">Calcular</button>
+                </form>
+                <p id="resultadoFactoriales"></p>
+            </section>
+        
+            <section id="ejercicio4">
+                <h2>Ejercicio 4: Rotar Número</h2>
+                <form id="rotarNumeroForm">
+                    <label for="numeroRotar">Número a rotar:</label>
+                    <input type="text" id="numeroRotar" required>
+                    <button type="button" onclick="rotarIzquierda()">Rotar Izquierda</button>
+                    <button type="button" onclick="rotarDerecha()">Rotar Derecha</button>
+                </form>
+                <p id="resultadoRotar"></p>
+            </section>
+        
+            <section id="ejercicio5">
+                <h2>Ejercicio 5: Rotar Dígitos Pares</h2>
+                <form id="rotarParesForm">
+                    <label for="numeroPares">Número (6+ dígitos):</label>
+                    <input type="text" id="numeroPares" required>
+                    <button type="button" onclick="rotarPares()">Rotar</button>
+                </form>
+                <p id="resultadoPares"></p>
+            </section>
+        
+            <section id="ejercicio6">
+                <h2>Ejercicio 6: Dígitos Repetidos</h2>
+                <form id="digitosRepetidosForm">
+                    <label for="numeroRepetidos">Número mayor a 100:</label>
+                    <input type="number" id="numeroRepetidos" min="101" required>
+                    <button type="button" onclick="mostrarRepetidos()">Mostrar</button>
+                </form>
+                <p id="resultadoRepetidos"></p>
+            </section>
+        
+            <section id="ejercicio7">
+                <h2>Ejercicio 7: Número Capicúa</h2>
+                <form id="numeroCapicuaForm">
+                    <label for="numeroCapicua">Número positivo:</label>
+                    <input type="number" id="numeroCapicua" min="1" required>
+                    <button type="button" onclick="esCapicua()">Verificar</button>
+                </form>
+                <p id="resultadoCapicua"></p>
+            </section>
+        
+            <section id="ejercicio8">
+                <h2>Ejercicio 8: Número Primo</h2>
+                <form id="numeroPrimoForm">
+                    <label for="numeroPrimo">Número:</label>
+                    <input type="number" id="numeroPrimo" min="1" required>
+                    <button type="button" onclick="esPrimor()">Verificar</button>
+                </form>
+                <p id="resultadoPrimo"></p>
+            </section>
+        
+            <section id="ejercicio9">
+                <h2>Ejercicio 9: Números Primos hasta N</h2>
+                <form id="numerosPrimosForm">
+                    <label for="primosHasta">Generar hasta:</label>
+                    <input type="number" id="primosHasta" min="1" required>
+                    <button type="button" onclick="generarPrimos()">Generar</button>
+                </form>
+                <p id="resultadoPrimos"></p>
+            </section>
+        
+            <section id="ejercicio10">
+                <h2>Ejercicio 10: Vector Fibonacci</h2>
+                <form id="vectorFibonacciForm">
+                    <label for="vectorFibonacci">Generar hasta:</label>
+                    <input type="number" id="vectorFibonacci" min="1" required>
+                    <button type="button" onclick="generarVectorFibonacci()">Generar</button>
+                </form>
+                <p id="resultadoVectorFibonacci"></p>
+            </section>
+        <section id="ejercicio11">
+            <h2>Ejercicio 11: Serie Exponencial</h2>
+            <form id="serieExponencialForm">
+                <label for="exponencialInput">Número de términos (N):</label>
+                <input type="number" id="exponencialInput" min="1" required>
+                <button type="button" onclick="generarSerieExponencial()">Generar</button>
+            </form>
+            <p id="resultadoExponencial"></p>
+        </section>
+    
+        <section id="ejercicio12">
+            <h2>Ejercicio 12: Palabra Palíndromo</h2>
+            <form id="palabraPalindromoForm">
+                <label for="palabraPalindromo">Palabra:</label>
+                <input type="text" id="palabraPalindromo" required>
+                <button type="button" onclick="esPalindromo()">Verificar</button>
+            </form>
+            <p id="resultadoPalindromo"></p>
+        </section>
+    
+        <section id="ejercicio13">
+            <h2>Ejercicio 13: Invertir Cadena</h2>
+            <form id="invertirCadenaForm">
+                <label for="cadenaInvertir">Cadena:</label>
+                <input type="text" id="cadenaInvertir" required>
+                <button type="button" onclick="invertirCadena()">Invertir</button>
+            </form>
+            <p id="resultadoInvertir"></p>
+        </section>
+    
+        <section id="ejercicio14">
+            <h2>Ejercicio 14: Calculadora</h2>
+            <form id="calculadoraForm">
+                <label for="numero1">Número 1:</label>
+                <input type="number" id="numero1" required>
+                <label for="operacion">Operación:</label>
+                <select id="operacion" required>
+                    <option value="+">Suma (+)</option>
+                    <option value="-">Resta (-)</option>
+                    <option value="*">Multiplicación (*)</option>
+                    <option value="/">División (/)</option>
+                    <option value="^">Exponente (x^y)</option>
+                    <option value="!">Factorial (!)</option>
+                </select>
+                <label for="numero2">Número 2 (si aplica):</label>
+                <input type="number" id="numero2">
+                <button type="button" onclick="calcular()">Calcular</button>
+            </form>
+            <p id="resultadoCalculadora"></p>
+        </section>
+    
+        <section id="ejercicio15">
+            <h2>Ejercicio 15: Convertir a Números Romanos</h2>
+            <form id="convertirRomanosForm">
+                <label for="numeroRomano">Número entero:</label>
+                <input type="number" id="numeroRomano" min="1" max="3999" required>
+                <button type="button" onclick="convertirARomanos()">Convertir</button>
+            </form>
+            <p id="resultadoRomanos"></p>
+        </section>
+    
+        <section id="ejercicio16">
+            <h2>Ejercicio 16: Matriz de Pascal</h2>
+            <form id="matrizPascalForm">
+                <label for="filasPascal">Número de filas:</label>
+                <input type="number" id="filasPascal" min="1" required>
+                <button type="button" onclick="generarMatrizPascal()">Generar</button>
+            </form>
+            <pre id="resultadoPascal"></pre>
+        </section>
+    
+        </div>
+
+        <div class="menu-lateral">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#ejercicio1">Ejercicio 1</a></li>
+                <li><a href="#ejercicio2">Ejercicio 2</a></li>
+                <li><a href="#ejercicio3">Ejercicio 3</a></li>
+                <li><a href="#ejercicio4">Ejercicio 4</a></li>
+                <li><a href="#ejercicio5">Ejercicio 5</a></li>
+                <li><a href="#ejercicio6">Ejercicio 6</a></li>
+                <li><a href="#ejercicio7">Ejercicio 7</a></li>
+                <li><a href="#ejercicio8">Ejercicio 8</a></li>
+                <li><a href="#ejercicio9">Ejercicio 9</a></li>
+                <li><a href="#ejercicio10">Ejercicio 10</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer">
+        Web Diseñado por Jhonatan Plata Cruz
+    </div>
+</body>
+<script src="funciones.js"></script>
+</html>
